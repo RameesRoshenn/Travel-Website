@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Websites</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font awesome -->
+  <!-- Font Awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Font Awesome Cdn -->
+
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@1&family=Kanit:ital,wght@1,300&family=Oswald:wght@500&family=Roboto+Slab:wght@600&family=Rubik:wght@500&display=swap"
+    rel="stylesheet">
+
+
+
+  <!-- google fonts -->
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <section id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="logo"><Span>T</Span>ravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</a>
+            </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#packages" role="button" data-bs-toggle="dropdown">Packages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#international">International Destintions</a></li>
+                  <li><a class="dropdown-item" href="#domestic">Domestic Destintions</a></li>
+                 
+                </ul>
+              </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallary">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- home -->
+    <div class="home">
+      <div class="content">
+        <h5>Let's Make Your Best <br> Trip Ever.</h5>
+        
+        <p>
+          Make Your Tour Amazing With Us
+        </p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal">BOOK PLACE</a>
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+        <!-- Modal -->
+       
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header d-flex jusify-content-center align-items-center flex-column">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <i class="fa-solid fa-map-location-dot fs-1" style="color: #ff007f;"></i>
+                  <h1 class="modal-title fs-3 p-2" id="exampleModalLabel"  style="color: #ff007f;">Where do you want to
+                    go?</h1>
+  
+                </div>
+                <div class="modal-body">
+                  <div class="col-md-6 py-3 py-md-0">
+                    <form action="#">
+                      
+                      <input type="text" class="form-control" placeholder="To" required>
+                      <br>
+                      <input type="text" class="form-control" placeholder="From" required>
+                      <br>
+                      <input type="date" class="form-control" placeholder="Arrival" required>
+                      <br>
+                      
+                      <input type="date" class="form-control" placeholder="Leaving" required>
+                      <!-- <br>
+                      <textarea class="form-control" rows="5" name="text"
+                        placeholder="Enter Your Name & Details"></textarea>
+                      <br> -->
+                      
+                      
+                        
+                        <input type="submit" value="Book Now" class="submit" required>
+    
+                      
+                    
+  
+                    </form>
+                  </div>
+  
+                </div>
+  
+              </div>
+            </div>
+          </div>
+       
+      </div>
+    </div>
+    <!-- home end -->
+
+  </section>
+
+
+
+
+
+  <!-- Packages -->
+  <section class="packages" id="packages">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>P</span>ackages</h1>
+      </div><div id="international">
+       
+        <div class="sub-txt">
+  
+          <h2> <i class="fa-solid fa-grip-lines" style="color: #0f0f10;"></i> International Destintions <i
+              class="fa-solid fa-grip-lines" style="color: #0f0f10;"></i></h2>
+  
+        </div>
+  
+  
+        <div class="row" style="margin-top: 30px;">
+  
+          <div class="col-md-4 py-3 py-md-0 ">
+  
+            <div class="card">
+              <img src="./photos/ishan-seefromthesky-DtWyp_4YEes-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Maldives</h3>
+                <p>The Maldives is famous for a number of reasons ,   including its vibrant culture ,beaches, sprawling greenery, and fascinating landmarks.Maldives is also famous for water sports and other adventure.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: $500</h6> -->
+                <a href="#book" class="me-4">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/david-rodrigo-Fr6zexbmjmc-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Dubai</h3>
+                <p> Stunning architecture, fancy hotels, shopping festivals, majestic skyscrapers, glittering skylines,
+                  and giant shopping malls, Dubai is truly a paradise for scores of tourists from around the world.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/alex-vasey-3lxrM5yvkcI-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Europe</h3>
+                <p>Europe is one of the finest lands to explore art and culture. Famous destinations such as Italy is
+                  known for having more art pieces per square metre than any other country in the world.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+  
+  
+  
+        </div>
+  
+  
+  
+        <div class="row" style="margin-top: 30px;">
+  
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/aron-visuals-1kdIG_258bU-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Bali</h3>
+                <p>Bali has virtually every kind of natural beauty. Glorious mountainous areas with lush greenery, stunning beaches, scenic lakes, gorgeous waterfalls, iconic rice fields, flower gardens.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/sebastien-goldberg-YmvYdFU4LvE-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Hong Kong</h3>
+                <p>Hong Kong is one of the major tourist destinations in the world because of its gastronomic affair, vibrant nightlife, beautiful temples. Modern skyscrapers and centuries-old temples </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/mathew-schwartz-gsllxmVO4HQ-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Thailand</h3>
+                <p>Thailand is popular as a tourist destination due to its geographical and cultural importance. It has some of the most exquisite beaches, rural getaways, Buddhist temples, and shopping malls.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+  
+  
+  
+        </div>
+  
+  
+  
+  
+  
+      </div>
+<div id="domestic">
+        <div class="sub-txt">
+  
+          <h2> <i class="fa-solid fa-grip-lines" style="color: #0f0f10;"></i> Domestic Destintions <i
+              class="fa-solid fa-grip-lines" style="color: #0f0f10;"></i></h2>
+  
+        </div>
+  
+  
+        <div class="row" style="margin-top: 30px;">
+  
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/jovyn-chamb-iWMfiInivp4-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Taj Mahal</h3>
+                <p>The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage".</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: $500</h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Goa</h3>
+                <p> Goa is considered one of the best tourist places to visit in India. Its white sandy beaches, palm trees, low tax rate, amazing coastal cuisine and laid-back attitude make it a wonderful tourist place in India.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book" >Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/prerna-sharma-Lw9WQY9ETVU-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3> Amritsar</h3>
+                <p>Amritsar is considered the spiritual capital of Sikhism. The holiest gurudwara of the Sikh faith, The Golden Temple is situated at the centre of the old town. One of the largest cities in Punjab.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+  
+  
+  
+        </div>
+  
+  
+  
+        <div class="row" style="margin-top: 30px;">
+  
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/chaitanya-rayampally-XhYP3T-telg-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Ooty</h3>
+                <p> Is a hill station in the state of Tamil Nadu. The pleasant climate, the view of India’s Western Ghats
+                  and the peaceful atmosphere make a great tourist place for both family and friends.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/abhishek-prasad-N3VzleBhOvk-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3>Alleppey</h3>
+                <p>Alleppey is one of the ten most gorgeous locations in the world, according to the National Geographic Traveler. Located on  Malabar Coast, backwaters of Kerala showcase the true beauty of nature.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+  
+            <div class="card">
+              <img src="./photos/klara-avsenik-Svxz1d3f8Eg-unsplash.jpg" alt="">
+              <div class="card-body">
+                <h3> Ladakh</h3>
+                <p>Is in the eastern parts of Jammu and Kashmir. Ladakh is known for its pristine lakes, freezing winds ,glaciers and sand dunes. It has kept its distance from the modern world.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <!-- <h6>Price: <strong>$500</strong></h6> -->
+                <a href="#book">Book Now</a>
+                
+              </div>
+            </div>
+  
+          </div>
+  
+  
+  
+        </div>
+  
+  
+</div>
+    </div>
+
+
+
+  </section>
+  <!--Packages End -->
+
+
+
+  <!--Services Start -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>S</span>ervices</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-3 py-3 py-md-0 ">
+
+          <div class="card" id="downcard">
+
+            
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Affordable Hotel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+              </div>
+           
+  
+          </div>
+          </div>
+            
+        <div class="col-md-3 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card-body">
+              <h3>Food & Drinks</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+            </div>
+          </div>
+
+        </div>
+        
+
+
+<!-- new -->
+<div class="col-md-3 py-3 py-md-0 ">
+
+  <div class="card" id="downcard">
+    <i class="fas fa-bullhorn"></i>
+    <div class="card-body">
+      <h3>Safty Guide</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+    </div>
+  </div>
+
+</div>
+<!-- new -->
+
+        <div class="col-md-3 py-3 py-md-0 ">
+
+          <div class="card">
+            <i class="fa-solid fa-headset"></i>
+            <div class="card-body">
+              <h3>24/7</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+  <!--Services End -->
+
+
+
+  <!--Gallary-->
+  <section class="gallary" id="gallary">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>G</span>allary</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/1.jpeg"  height="230px">
+            
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/2.jpeg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/sky-travel-monuments-famous-places-wallpaper-preview.jpg" alt="" height="230px">
+          </div>
+        </div>
+       
+      </div>
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/4.jpeg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/3.jpeg" alt="" height="230px">
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/C9QEUs.jpg" alt="" height="230px">
+          </div>
+        </div>
+       
+      </div>
+      
+
+    </div>
+  </section>
+  <!--Gallary End -->
+
+
+
+
+  <!-- About-->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1>About <span>Us</span></h1>
+      </div>
+
+      <div class="row" style="margin-top: 50px;">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./photos/dino-reichmuth-A5rCN8626Ck-unsplash (2).jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 about-right-side" >
+          <h2>How Travel Agency Work</h2>
+          <p>Obsessed with the idea of empowering the travelers with best vacation deals, Travel is a product of Holiday
+            Travel Pvt. Ltd. We are an online marketplace that connects a traveler to multiple local travel agents. With the help of these 650+ local travel experts Travel has been able to cater to the needs of over 10 Lactravelers on international tour holidays as well as domestic India tours.</p>
+          <button id="about-btn">Read More...</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About End -->
+  
+            
+  <!-- sign me -->
+<div class="sign-me">
+  <div class="main-text">
+    <h5>If You Love Travelling,<br> You're One Of Us.</h5>
+    <p>Stay up-to-date with our new offers, upcoming events, seasonal specials, and promotions</p>
+  </div>
+  <form class="d-flex">
+    <input class="form-control me-2" type="text" placeholder="Enter Your Email Address">
+    <button class="btn btn-primary" type="button">SIGN ME UP!</button>
+  </form>
+</div>
+
+
+  <!-- sign me -->
+
+  
+  <!-- Footer Start -->
+  <footer class="footer">
+
+    <div class="social-links">
+      <i class="fa-brands fa-instagram" "></i>
+        <i class=" fa-brands fa-github" "></i>
+        <i class=" fa-brands fa-facebook" "></i>
+        <i class=" fa-brands fa-pinterest" "></i>
+        
+      </div>
+      <div class=" credit">
+        <p>Designed By <a href="#">Ramiz Roshen</a></p>
+    </div>
+    <div class="copyright">
+      <p>&copy;Copyright All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
